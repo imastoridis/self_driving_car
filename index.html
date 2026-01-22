@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Self-driving car - No libraries</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -10,8 +11,8 @@
     <div class="sim_div">
         <canvas id="carCanvas"></canvas>
         <div id="verticalButtons">
-            <button onclick="save()">💾</button>
-            <button onclick="discard()">🗑️</button>
+            <button onclick="save()" class="btn_save"></button>
+            <button onclick="discard()" class="btn_delete"></button>
         </div>
         <canvas id="networkCanvas"></canvas>
     </div>

@@ -1,53 +1,64 @@
 body {
-    margin: 0;
-    background: darkgray;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  margin: 0;
+  background: darkgray;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #verticalButtons {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 button {
-    border: none;
-    border-radius: 5px;
-    padding: 15px 15px 15px 15px;
-    margin: 2px;
-    cursor: pointer;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
 }
 
-button:hover {
-    background: blue;
+.btn_save {
+  background: url("images/floppy-disk-solid-full.svg") no-repeat;
+  background-color: white;
+}
+
+.btn_delete {
+  background: url("images/trash-solid-full.svg") no-repeat;
+  background-color: white;
+}
+
+.btn_save:hover {
+  color: blue;
 }
 
 #networkCanvas {
-    background: black;
+  background: black;
 }
 
 #carCanvas {
-    background: lightgray;
+  background: lightgray;
 }
 
 #info_div {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width:40%;
-    background-color: white;
-    height: 100%;
-    justify-content: center;
-    padding: 15px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  background-color: white;
+  height: 100%;
+  justify-content: center;
+  padding: 15px;
 }
 
 .sim_div {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    gap: 20px;
-    width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+  width: 50%;
 }
