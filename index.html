@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Self-driving car - No libraries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Simulation div -->
+    <div class="sim_div">
+        <canvas id="carCanvas"></canvas>
+        <div id="verticalButtons">
+            <button onclick="save()">💾</button>
+            <button onclick="discard()">🗑️</button>
+        </div>
+        <canvas id="networkCanvas"></canvas>
+    </div>
+
+    <!-- Information div -->
+    <div id="info_div">
+        <p id="info">
+            <strong>Neural Network and Machine Learning - Self driving car</strong>
+        </p>
+        <p> This is an implementation of a neural network designed to teach a car to avoid collisions.</p>
+        <p> The car is controlled by a neural network that learns from its mistakes using the
+            <a href="https://en.wikipedia.org/wiki/Deep_reinforcement_learning">Deep Reinforcement Learning</a>
+            technique.
+        </p>
+        <p> To train it, reload the page until the car starts avoiding the first red car. </p>
+        <p> Then click the save button (to lock in that simulation) and reload the page until your car does better. Save
+            every simulation that is better than before and reload until your car can avoid all collisions.</p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="visualizer.js"></script>
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="utils.js"></script>
+    <script src="road.js"></script>
+    <script src="controls.js"></script>
+    <script src="car.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
